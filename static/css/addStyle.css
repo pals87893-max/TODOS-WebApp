@@ -1,0 +1,65 @@
+/* 1. General Container & Typography */
+.input-group {
+    background-color: #fcfaf2; /* Washi (Paper) color */
+    border: 2px solid #2c1e14; /* Dark wood frame */
+    padding: 2rem;
+    box-shadow: 6px 6px 0px #2c1e14; /* Sharp offset shadow */
+}
+
+h3 {
+    font-family: 'Hina Mincho', serif; /* Brush-like serif font */
+    color: #2c1e14;
+    font-size: 1.2rem;
+    border-left: 5px solid #bc412b; /* Vermilion accent marker */
+    padding-left: 10px;
+    margin-bottom: 0.5rem;
+}
+
+/* 2. Textareas & Inputs */
+.form-control {
+    background-color: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid #dcd7c9 !important; /* Subtle paper fold line */
+    border-radius: 0 !important;
+    padding: 10px 0 !important;
+    color: #3d2b1f;
+    font-family: 'Noto Serif JP', serif;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-bottom: 2px solid #bc412b !important; /* Vermilion focus line */
+}
+
+/* 3. The "Add" Button (Hanko Stamp Style) */
+.btn-dark {
+    background-color: #bc412b !important; /* Traditional Vermilion Red */
+    border: none;
+    border-radius: 0;
+    padding: 10px 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: transform 0.1s;
+}
+
+.btn-dark:active {
+    transform: scale(0.95); /* Simulates pressing a stamp */
+}
+
+/* 4. Radio/Important Section */
+.form-check-label {
+    font-family: serif;
+    color: #7b7067;
+    margin-right: 10px;
+}
+
+.form-check-input {
+    border-radius: 0;
+    border: 1px solid #2c1e14;
+    cursor: pointer;
+}
+
+.form-check-input:checked {
+    background-color: #bc412b;
+    border-color: #bc412b;
+}

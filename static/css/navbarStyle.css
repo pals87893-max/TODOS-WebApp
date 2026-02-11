@@ -1,0 +1,54 @@
+/* 1. The Main Bar: Washi Paper Texture */
+.navbar {
+  background-color: #f8f4ed !important; /* Washi (Off-white paper) */
+  border-bottom: 3px solid #2c1e14; /* Dark Wood Frame */
+  padding: 1rem 2rem;
+}
+
+/* 2. Brand & Links: Vertical focus & Calligraphy style */
+.navbar-brand {
+  font-family: 'serif';
+  font-weight: 900;
+  color: #bc412b !important; /* Shu-iro (Vermilion Red) */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.nav-link {
+  color: #2c1e14 !important; /* Sumi (Black Ink) */
+  font-family: 'serif';
+  border-left: 1px solid rgba(44, 30, 20, 0.2);
+  margin-left: 15px;
+  padding-left: 15px !important;
+  transition: all 0.3s;
+}
+
+.nav-link:hover {
+  background-color: rgba(188, 65, 43, 0.1); /* Soft red tint */
+  color: #bc412b !important;
+}
+
+/* 3. The Search Bar: Minimalist Square Design */
+.form-control {
+  border-radius: 0; /* Traditional sharp edges */
+  border: 1px solid #2c1e14;
+  background-color: transparent;
+}
+
+.btn-dark {
+  border-radius: 0;
+  background-color: #2c1e14;
+  border: none;
+  font-family: 'serif';
+}
+
+/* 4. Shoji Screen Effect (Optional) */
+.navbar::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: radial-gradient(#000 0.5px, transparent 0.5px);
+  background-size: 20px 20px;
+  opacity: 0.03; /* Very subtle paper grain */
+  pointer-events: none;
+}
