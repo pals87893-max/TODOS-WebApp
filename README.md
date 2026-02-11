@@ -1,31 +1,31 @@
-📝 Flask To-Do App
+**📝 Flask To-Do App**
 
 A simple To-Do List web application built using Flask, SQLAlchemy, and SQLite.
 This app allows users to create, view, update, and delete tasks.
 
-🚀 Features
+**🚀 Features**
 
-Add new tasks
+*Add new tasks
 
-View all tasks
+*View all tasks
 
-Update existing tasks
+*Update existing tasks
 
-Delete tasks
+*Delete tasks
 
-SQLite database integration
+*SQLite database integration
 
-MVC structure using Flask and Jinja2 templates
+*MVC structure using Flask and Jinja2 templates
 
-🛠️ Tech Stack
+**🛠️ Tech Stack**
 
-Backend: Flask (Python)
+*Backend: Flask (Python)
 
-Database: SQLite
+*Database: SQLite
 
-ORM: Flask-SQLAlchemy
+*ORM: Flask-SQLAlchemy
 
-Frontend: HTML (Jinja2 Templates)
+*Frontend: HTML (Jinja2 Templates)
 
 📂 Project Structure
 project-folder/
