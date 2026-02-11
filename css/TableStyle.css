@@ -1,0 +1,75 @@
+/* 1. Container & Header Styles */
+.container.my-4 {
+    background-color: #fcfaf2; /* Washi paper tint */
+    padding: 30px;
+    border: 2px solid #3d2b1f; /* Dark wood outer frame */
+    box-shadow: 8px 8px 0px #3d2b1f; /* Blocky shadow style */
+}
+
+h5 {
+    font-family: "Serif", "Noto Serif JP";
+    font-weight: 900;
+    color: #2c1e14;
+    border-bottom: 3px solid #bc412b; /* Vermilion underline */
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+}
+
+/* 2. The Table: Shoji-inspired Grid */
+.table {
+    border-collapse: separate;
+    border-spacing: 0;
+    background: transparent;
+}
+
+.table thead th {
+    background-color: #2c1e14; /* Dark Sumi ink */
+    color: #fcfaf2;
+    border: none;
+    font-family: serif;
+    letter-spacing: 1px;
+    padding: 12px;
+}
+
+.table tbody tr {
+    transition: background 0.3s;
+}
+
+.table tbody tr:hover {
+    background-color: rgba(188, 65, 43, 0.05); /* Very light vermilion hover */
+}
+
+.table td, .table th {
+    border-bottom: 1px solid #dcd7c9; /* Subtle paper-fold line */
+    padding: 15px 12px;
+    vertical-align: middle;
+    color: #3d2b1f;
+}
+
+/* 3. Buttons: Minimalist Stamps */
+.btn-outline-danger, .btn-outline-warning {
+    border-radius: 0; /* Sharp edges like a Hanko stamp */
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.btn-outline-danger {
+    color: #bc412b;
+    border-color: #bc412b;
+}
+
+.btn-outline-danger:hover {
+    background-color: #bc412b;
+    color: white;
+}
+
+/* 4. Alert: Clean Zen Style */
+.alert-light {
+    background-color: transparent;
+    border: 1px dashed #3d2b1f;
+    color: #7b7067;
+    font-style: italic;
+    text-align: center;
+}
