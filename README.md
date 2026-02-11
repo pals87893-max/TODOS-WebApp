@@ -77,18 +77,14 @@ pip install -r requirements.txt
 python app.py
 
 
-The app will run at:
-
-http://127.0.0.1:5000/
-
-🗄️ Database Model
+**🗄️ Database Model**
 Todo Model
 Field	Type	Description
 sl_no	Integer	Primary Key (Auto Increment)
 created_at	DateTime	Auto-generated timestamp
 title	String(200)	Optional title
 todo	String(600)	Task description (Required)
-🌐 Routes
+**🌐 Routes**
 Route	Method	Description
 /	GET	Home page
 /index	GET, POST	View all tasks & add task
@@ -107,8 +103,8 @@ Tasks are retrieved using Todo.query.all().
 
 Jinja2 templates render data dynamically.
 
-🧠 Learning Objectives
-
+**🧠 Learning Objectives
+**
 This project demonstrates:
 
 Flask routing
@@ -123,7 +119,7 @@ Redirect handling
 
 Form handling in Flask
 
-🔒 Future Improvements
+**🔒 Future Improvements**
 
 Add user authentication
 
@@ -137,6 +133,6 @@ Add REST API support
 
 Pagination support
 
-📄 License
+**📄 License**
 
 This project is open-source and free to use for educational purposes.
