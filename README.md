@@ -27,7 +27,7 @@ This app allows users to create, view, update, and delete tasks.
 
 *Frontend: HTML (Jinja2 Templates)
 
-📂 Project Structure
+**📂 Project Structure**
 project-folder/
 │
 ├── app.py
@@ -39,7 +39,7 @@ project-folder/
 │   └── update.html
 └── README.md
 
-⚙️ Installation & Setup
+**⚙️ Installation & Setup**
 1️⃣ Clone the Repository
 git clone | https://github.com/pals87893-max/TODOS-WebApp.git
 cd flask-todo-app
@@ -103,8 +103,7 @@ Tasks are retrieved using Todo.query.all().
 
 Jinja2 templates render data dynamically.
 
-**🧠 Learning Objectives
-**
+**🧠 Learning Objectives**
 This project demonstrates:
 
 Flask routing
