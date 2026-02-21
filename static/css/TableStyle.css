@@ -1,0 +1,90 @@
+/* 1. Container & Header Styles */
+.container.my-4 {
+    background-color: #fcfaf2;
+    padding: 20px; /* Reduced for mobile */
+    border: 2px solid #3d2b1f;
+    box-shadow: 4px 4px 0px #3d2b1f; /* Smaller shadow for mobile */
+    width: 95%;
+    margin: 10px auto;
+}
+
+h5 {
+    font-family: "Serif", "Noto Serif JP";
+    font-weight: 900;
+    color: #2c1e14;
+    border-bottom: 3px solid #bc412b;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+/* 2. Responsive Table (Card View for Mobile) */
+@media (max-width: 768px) {
+    .table, .table thead, .table tbody, .table th, .table td, .table tr {
+        display: block; /* Stack everything vertically */
+        width: 100%;
+    }
+
+    .table thead {
+        display: none; /* Hide headers on mobile */
+    }
+
+    .table tbody tr {
+        margin-bottom: 15px;
+        border: 1px solid #3d2b1f; /* Box each task */
+        background-color: #fffefb;
+        padding: 10px;
+        box-shadow: 2px 2px 0px #dcd7c9;
+    }
+
+    .table td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+        border-bottom: 1px solid #f2eee3;
+    }
+
+    /* Add labels back for context */
+    .table td::before {
+        content: attr(data-label); /* Requires adding data-label to your HTML <td> */
+        position: absolute;
+        left: 10px;
+        width: 45%;
+        text-align: left;
+        font-weight: bold;
+        color: #7b7067;
+        font-family: serif;
+    }
+
+    .table td:last-child {
+        border-bottom: none;
+        text-align: center; /* Center action buttons */
+        padding-left: 12px;
+    }
+}
+
+/* 3. Buttons: Minimalist Stamps */
+.btn-outline-danger, .btn-outline-warning {
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin: 5px 2px;
+    padding: 8px 12px; /* Larger tap target */
+}
+
+/* 4. Important Row Styling */
+.important-row td, .important-row th {
+    background-color: #fff9e6 !important;
+    color: #bc412b !important;
+    border-left: 4px solid #bc412b; /* Vermilion side-marker */
+}
+
+/* Desktop Fixes */
+@media (min-width: 769px) {
+    .container.my-4 {
+        padding: 30px;
+        box-shadow: 8px 8px 0px #3d2b1f;
+    }
+}

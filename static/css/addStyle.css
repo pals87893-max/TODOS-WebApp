@@ -1,0 +1,68 @@
+/* 1. General Container & Typography */
+.input-group {
+    background-color: #fcfaf2; 
+    border: 2px solid #2c1e14; 
+    padding: 1.5rem; /* Reduced padding for mobile */
+    box-shadow: 4px 4px 0px #2c1e14; /* Slightly smaller shadow for mobile */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically on mobile */
+    gap: 1rem;
+    width: 100%; /* Ensure it doesn't overflow */
+    box-sizing: border-box;
+}
+
+h3 {
+    font-family: 'Hina Mincho', serif;
+    color: #2c1e14;
+    font-size: 1.1rem; /* Slightly smaller for mobile */
+    border-left: 5px solid #bc412b;
+    padding-left: 10px;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+/* 2. Textareas & Inputs */
+.form-control {
+    background-color: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid #dcd7c9 !important;
+    border-radius: 0 !important;
+    padding: 12px 0 !important; /* Larger touch target */
+    color: #3d2b1f;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 16px !important; /* Prevents iOS auto-zoom on focus */
+    width: 100%;
+}
+
+/* 3. The "Add" Button (Hanko Stamp Style) */
+.btn-dark {
+    background-color: #bc412b !important;
+    border: none;
+    border-radius: 0;
+    padding: 12px 20px; /* Adjust padding for better thumb-tap */
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: transform 0.1s;
+    width: 100%; /* Full width button is better for mobile UX */
+    margin-top: 10px;
+}
+
+/* 4. Media Query for Desktop adjustments */
+@media (min-width: 768px) {
+    .input-group {
+        flex-direction: row; /* Horizontal on desktop */
+        padding: 2rem;
+        box-shadow: 6px 6px 0px #2c1e14;
+    }
+    .btn-dark {
+        width: auto; /* Return to natural width on desktop */
+        padding: 10px 40px;
+    }
+}
+
+/* 5. Touch Improvements */
+.form-check-input {
+    width: 1.2rem; /* Larger checkbox for easier tapping */
+    height: 1.2rem;
+    margin-top: 0.2rem;
+}
