@@ -78,7 +78,6 @@ h5 {
 .important-row td, .important-row th {
     background-color: #fff9e6 !important;
     color: #bc412b !important;
-    border-left: 4px solid #bc412b; /* Vermilion side-marker */
 }
 
 /* Desktop Fixes */
@@ -88,3 +87,4 @@ h5 {
         box-shadow: 8px 8px 0px #3d2b1f;
     }
 }
+
