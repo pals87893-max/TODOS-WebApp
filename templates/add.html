@@ -1,0 +1,36 @@
+{% extends 'index.html' %}
+{% block title %}
+Add Todos
+{% endblock title %}
+{% block heading %}
+Add Todos
+{% endblock heading %}
+{% block add %}
+
+<div class="container my-4">
+    <form action="{{ url_for('add', username=username) }}" method="POST">
+        <div class="input-group">
+            <div class="container my-2">
+                <h3>Title</h3>
+            </div>
+            <textarea class="form-control" aria-label="With textarea" name="title"
+                placeholder="Write the title of your todo"></textarea>
+            <div class="container">
+                <h3>Description</h3>
+            </div>
+            <textarea class="form-control" aria-label="With textarea" name="todo"
+                placeholder="Write your todo description here"></textarea>
+        </div>
+        <div class="container my-2">
+            <button type="submit" class="btn btn-dark btn-lg"> Add </button>
+            <div class="form-check form-check-reverse">
+                <label for="reverseCheck1">
+                    <input type="checkbox" name="important" id="reverseCheck1"> Mark as Important
+                </label>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+        {% endblock add %}

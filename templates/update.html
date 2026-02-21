@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}
+        Update
+        {% endblock title %}-Todos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/common.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/navbarStyle.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/TableStyle.css') }}">
+</head>
+
+<body>
+    <h2>
+        {% block heading %}
+        Update
+        {% endblock heading %}
+    </h2>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href=href="{{ url_for('index_page', username=username)}}">My Todos</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container my-4">
+        <form action="{{ url_for('update', username=username, sl_no=Todo.sl_no) }}" method="POST">
+            <h3>Title</h3>
+            <div class="input-group">
+                <textarea class="form-control" aria-label="With textarea" name="up_title">{{Todo.title}}</textarea>
+            </div>
+            <h3>Description</h3>
+            <div class="input-group my-3">
+                <textarea class="form-control" aria-label="With textarea" name="update">{{Todo.todo}}</textarea>
+            </div>
+            <div class="container my-3">
+                <button type="submit" class="btn btn-dark btn-lg"> Update </button>
+            </div>
+    </div>
+    </form>
+    </div>
+</body>
+
+</html>

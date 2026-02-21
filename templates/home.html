@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/welcomeStyle.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</head>
+
+<body>
+    <div class="shoji-container" id="shoji">
+        <div class="room-content">
+            <main class="zen-content">
+                <h1 class="main-title">WELCOME</h1>
+                <p class="description">Never forget what to do ever again</p>
+                <div style="margin-bottom: 20px;">
+                    <input type="text" id="user" placeholder="Enter your name..." required 
+                           style="padding: 10px; border-radius: 5px; border: 1px solid #ccc; width: 250px;">
+                </div>
+                <button class="btn-hanko" onclick="goToUserTodo()">Explore Now</button>
+                <a href="/about"><button class="btn-hanko">About Me</button></a>
+
+            </main>
+        </div>
+        <!-- Left and Right Sliding Doors -->
+        <div class="door left-door">
+            <div class="handle1"></div>
+        </div>
+        <div class="door right-door">
+            <div class="handle2"></div>
+        </div>
+
+    </div>
+
+    <div class="welcome-container">
+        <header>
+            <div class="logo-hanko">SP</div> <!-- Calligraphy-style logo -->
+        </header>
+
+        <div class="shoji-lattice"></div> <!-- Decorative lattice background -->
+    </div>
+
+
+</body>
+
+</html>
